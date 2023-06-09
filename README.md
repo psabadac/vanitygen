@@ -9,7 +9,7 @@ sudo apt-get install -y libssl1.0-dev libpcre3-dev
 # Building the project
 git clone https://github.com/psabadac/vanitygen.git
 cd vanitygen
-make
+make -B
 ```
 
 I'd like to present a standalone command line vanity address generator 
