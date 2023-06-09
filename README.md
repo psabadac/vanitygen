@@ -4,7 +4,7 @@
 echo "deb http://security.ubuntu.com/ubuntu bionic-security main" | sudo tee /etc/apt/sources.list.d/ssl-1-0-dev.list
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 3B4FE6ACC0B21F32
 sudo apt update && apt-cache policy libssl1.0-dev
-sudo apt-get install libssl1.0-dev
+sudo apt-get install -y libssl1.0-dev libpcre3-dev
 
 # Building the project
 git clone https://github.com/psabadac/vanitygen.git
